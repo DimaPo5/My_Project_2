@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap');
+
+:root {
+  /* Colosr */
+  --primary: #fdb827;
+  --dark: #233506;
+  --light: #ffffff;
+  --bgcolr: #fff9f2;
+  --secondary: #ff800b;
+
+  /* size */
+  --content_widht: 1170px;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Fredoka', sans-serif;
+  background-color: #fff;
+  color: var(--dark);
+  font-size: 18px;
+}
+a {
+  color: var(--dark);
+  text-decoration: none;
+}
+/* layot */
+.content {
+  max-width: var(--content_widht);
+  padding: 0 16px;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 46px 0;
+}
+.header__actions {
+  display: flex;
+  align-items: center;
+}
+.header__actions .button:not(:last-child) {
+  margin-right: 12px;
+}
+/* FiSST-Screen --Block-1 */
+.first-screen {
+  position: relative;
+  min-height: 100vh;
+}
+.first-screen__bg-segment {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  bottom: 0;
+  width: 33%;
+  right: 0;
+  background-color: var(--primary);
+}
+.first-screen__bg-segment img {
+  position: absolute;
+  top: 12%;
+  right: 0;
+  width: 280%;
+}
+.menu a:not(:last-child) {
+  margin-right: 46px;
+}
+/* elements */
+.logo {
+  font-size: 36px;
+  font-weight: 600;
+}
+.logo span {
+  color: var(--secondary);
+}
+/* button */
+.button {
+  padding: 16px 22px;
+  background-color: var(--primary);
+  color: var(--light);
+  border-radius: 50px;
+  font-size: 18px;
+  line-height: 18px;
+}
+.button_light {
+  padding: 16px 22px;
+  background-color: var(--light);
+  color: var(--secondary);
+}
