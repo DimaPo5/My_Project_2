@@ -70,7 +70,7 @@ a {
   position: absolute;
   top: 0;
   z-index: 0;
-  bottom: 55px;
+  bottom: 0;
   width: 30%;
   right: 0;
   background-color: var(--primary);
